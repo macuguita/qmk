@@ -32,16 +32,16 @@ enum layers {
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [MAC_BASE] = LAYOUT_iso_83(
-        KC_ESC,   KC_BRID,  KC_BRIU,  KC_MCTRL, KC_LNPAD, UG_VALD,  UG_VALU,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_DEL,             KC_MUTE,
-        ES_MORD,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     ES_QUOT,  ES_IEXL,   KC_BSPC,            KC_PGUP,
-        KC_TAB,   KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,     KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,     ES_GRV,  ES_PLUS,                      KC_PGDN,
+        KC_ESC,   KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_DEL,             KC_MUTE,
+        ES_MORD,  KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     ES_QUOT,  ES_IEXL,  KC_BSPC,            KC_PGUP,
+        KC_TAB,   KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,     KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,     ES_GRV,   ES_PLUS,                      KC_PGDN,
         KC_CAPS,  KC_A,     KC_S,     KC_D,     KC_F,     KC_G,     KC_H,     KC_J,     KC_K,     KC_L,     ES_NTIL,  ES_ACUT,  ES_CCED,  KC_ENT,             KC_HOME,
         KC_LSFT,  ES_LABK,  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,     KC_N,     KC_M,     ES_COMM,  ES_DOT,   ES_MINS,            KC_RSFT,  KC_UP,
         KC_LCTL,  KC_LOPTN, KC_LCMMD,                               KC_SPC,                                 KC_RCMMD, FN_MAC,   KC_RCTL,  KC_LEFT,  KC_DOWN,  KC_RGHT),
 
     [MAC_FN] = LAYOUT_iso_83(
-        _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   _______,            UG_TOGG,
-        _______,  BT_HST1,  BT_HST2,  BT_HST3,  P2P4G,    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,            _______,
+        _______,  KC_BRID,  KC_BRIU,  KC_MCTRL, KC_LNPAD, UG_VALD,  UG_VALU,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,            UG_TOGG,
+        _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,            _______,
         UG_TOGG,  UG_NEXT,  UG_VALU,  UG_HUEU,  UG_SATU,  UG_SPDU,  _______,  _______,  _______,  _______,  _______,  _______,  _______,                      _______,
         _______,  UG_PREV,  UG_VALD,  UG_HUED,  UG_SATD,  UG_SPDD,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,            KC_END,
         _______,  _______,  _______,  _______,  _______,  _______,  BAT_LVL,  _______,  _______,  _______,  _______,  _______,            _______,  _______,
@@ -49,8 +49,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [WIN_BASE] = LAYOUT_iso_83(
         KC_ESC,   KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_DEL,             KC_MUTE,
-        ES_MORD,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     ES_QUOT,  ES_IEXL,   KC_BSPC,            KC_PGUP,
-        KC_TAB,   KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,     KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,     ES_GRV,  ES_PLUS,                      KC_PGDN,
+        ES_MORD,  KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     ES_QUOT,  ES_IEXL,  KC_BSPC,            KC_PGUP,
+        KC_TAB,   KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,     KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,     ES_GRV,   ES_PLUS,                      KC_PGDN,
         KC_CAPS,  KC_A,     KC_S,     KC_D,     KC_F,     KC_G,     KC_H,     KC_J,     KC_K,     KC_L,     ES_NTIL,  ES_ACUT,  ES_CCED,  KC_ENT,             KC_HOME,
         KC_LSFT,  ES_LABK,  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,     KC_N,     KC_M,     ES_COMM,  ES_DOT,   ES_MINS,            KC_RSFT,  KC_UP,
         KC_LCTL,  KC_LGUI,  KC_LALT,                                KC_SPC,                                 KC_RALT,  FN_WIN,   KC_RCTL,  KC_LEFT,  KC_DOWN,  KC_RGHT),
@@ -74,10 +74,68 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
 };
 #endif // ENCODER_MAP_ENABLE
 
+// State
+typedef struct {
+    bool     fn_held;
+    uint16_t interval_input; // digits accumulated while FN held
+} chord_input_t;
+
+typedef struct {
+    bool     active;
+    uint16_t interval_ms;
+    uint16_t last_click;
+    uint16_t keycode;   // MS_BTN1 or MS_BTN2
+} autoclicker_t;
+
+static chord_input_t chord_input = {0};
+static autoclicker_t autoclicker = {
+    .keycode = MS_BTN1
+};
+
 void keyboard_post_init_user(void) {
     rgb_matrix_enable();
+    rgb_matrix_sethsv(0, 0, 50);
+    rgb_matrix_mode(RGB_MATRIX_CUSTOM_time_reactive);
+}
 
-    rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
+bool process_record_user_rgb(uint16_t keycode, keyrecord_t *record);// jank needed to work with the animations...
 
-    rgb_matrix_sethsv(0, 0, 60);
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case FN_MAC:
+	case FN_WIN:
+            chord_input.fn_held = record->event.pressed;
+            if (chord_input.fn_held) {
+                chord_input.interval_input = 0;
+            } else {
+                if (chord_input.interval_input > 0) {
+                    autoclicker.interval_ms = chord_input.interval_input;
+                    autoclicker.keycode     = (get_mods() & MOD_MASK_SHIFT) ? MS_BTN2 : MS_BTN1;
+                    autoclicker.active      = true;
+                    autoclicker.last_click  = timer_read();
+                } else {
+                    autoclicker.active     = !autoclicker.active;
+                    autoclicker.last_click = timer_read();
+                }
+            }
+            return true;
+
+        case KC_1 ... KC_0:
+            if (chord_input.fn_held && record->event.pressed) {
+                uint8_t digit = (keycode == KC_0) ? 0 : (keycode - KC_1 + 1);
+                chord_input.interval_input = chord_input.interval_input * 10 + digit;
+                return false;
+            }
+            return true;
+    }
+    process_record_user_rgb(keycode, record);
+    return true;
+}
+
+void matrix_scan_user(void) {
+    if (autoclicker.active && autoclicker.interval_ms > 0 &&
+        timer_elapsed(autoclicker.last_click) > autoclicker.interval_ms) {
+        autoclicker.last_click = timer_read();
+        tap_code(autoclicker.keycode);
+    }
 }
