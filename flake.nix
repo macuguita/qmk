@@ -30,6 +30,7 @@
         {
           default = pkgs.mkShell {
             packages = with pkgs; [
+              qmk
               git
               gnumake
               python3
